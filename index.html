@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        * {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+h4 {
+    font-size: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: yellow;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: 
+    black;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 15px solid white;
+    border-top: 15px solid orange;
+    animation: animate 3s infinite linear;
+}
+/* .line {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    width: 30px;
+    height: 7px;
+    border-radius: 20px;
+    background-color: yellow;
+    animation: linee 1.5s ;
+    animation-timing-function:cubic-bezier(1, 1, 1, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+@keyframes animate  {
+    0% 
+    {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% 
+    {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+/* @keyframes linee {
+    0% 
+    {
+        transform: translate(0) 
+    }
+    100% 
+    {
+        transform: translate(150px) 
+    }
+} */
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle">
+       </div>
+       <h4>LOADING</h4>
+       <div class="line"></div>
+</body>
+</html>
